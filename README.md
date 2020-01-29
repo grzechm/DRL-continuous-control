@@ -10,9 +10,9 @@ The observation space consists of 33 variables corresponding to position, rotati
 
  In particular, the agents must get an average score of +30 (over 100 consecutive episodes, and over all agents). Specifically,
  
- *After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
+ * After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 20 (potentially different) scores. We then take the average of these 20 scores.
  
- *This yields an average score for each episode (where the average is over all 20 agents).
+ * This yields an average score for each episode (where the average is over all 20 agents).
 
 
 ### Dependencies (OS: Ubuntu 18.04)  
