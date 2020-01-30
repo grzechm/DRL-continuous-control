@@ -6,11 +6,15 @@ A value function can be used as a baseline (training target) for a policy-based 
 
 The Monte-Carlo esimate consists of rolling out an episode in calculating the discounted total reward from the reward sequence. After every episode the network is updated. The more estimates are provided the better the value function will be. Monte-Carlo methods will have high variance because estimates for a state can vary greatly across episodes. The reason for high variance is compounding lots of random events that happened during the course of a single episode. But the methods are unbiased as there is no recursive, local estimation of a state during the learning proceess. So given much enugh data, the estimate shall be accurate.
 
-The temporal difference method relies(?) on estimating the value of the current state using a single reward sample. Agent calculates current value function basing on the value of the current state and the value of the next state. So it basically optimizes the action basing on possible outcomes of the nest states(?). TD methods have low variance because at a single learning step one step of an actor is compunded. There is not much randomness but bootstrapping on the next state estimates adds bias into calculation. The agent will learn faster than in Monte-Carlo methods, will have lower variance, but will have higher bias.
+The temporal difference method relies on estimating the value of the current state using a single reward sample. Agent calculates current value function basing on the value of the current state and the value of the next state. So it basically optimizes the action basing on possible outcomes of the nest states(?). TD methods have low variance because at a single learning step one step of an actor is compunded. There is not much randomness but bootstrapping on the next state estimates adds bias into calculation. The agent will learn faster than in Monte-Carlo methods, will have lower variance, but will have higher bias.
+The temporal difference method have lower variance because at every time step the actor
+'judges' what the finall score of the whole episode will be. So the further the episode goes the higher the probability of proper guessing (estimating) is as agent has more data about it's current state.
+
+By using a TD critic instead of a Monte-Carlo baseline, the variance of policy-based methods is reduced.
 
 
+DDPG is a differen kind of actor-critic method. It could be seen as approximate DQN, insted of an actual actor critic. The reason is that the critic in DDPG is uded to approximate over the Q values of the next state insted of being a learning baseline.
 
-[source: https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf]
 
 ###Model architecture
 
