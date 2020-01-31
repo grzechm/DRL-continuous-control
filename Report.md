@@ -15,6 +15,21 @@ By using a TD critic instead of a Monte-Carlo baseline, the variance of policy-b
 
 DDPG is a differen kind of actor-critic method. It could be seen as approximate DQN, insted of an actual actor critic. The reason is that the critic in DDPG is uded to approximate over the Q values of the next state insted of being a learning baseline.
 
+The DDPG network architecture is a a bit altered in comparison to classical Actor-Critic.
+Actor takes states as inputs and returns actions as outputs.
+Critic takes as inputs current states and actions values. It further returns as an output single Q value which is basically Q value of that state with that particular action. The returnet value expresses how good chosen actions are in that particular state. Therefore it is possible to compare two action sets.
+
+The learning process of the Critic is the same as in DQN.
+The learning process of the Actor is based on deterministic policy gradient theorem. The intuition behind the process is as follows:
+1. The Actor takes an action in a particular state,
+2. The action is evaluated by the Critic,
+3. The Actor takes slightly different action,
+4. The Critic evaluates the action,
+5. Comparison of evaluated Q values shows the direction in which action shall be changed to get better results
+
+In the beggining the Critic shall learn faster than the Actor to provide appropriate Q values for the Actor.
+
+
 
 ###Model architecture
 
