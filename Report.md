@@ -29,7 +29,9 @@ The learning process of the Actor is based on deterministic policy gradient theo
 
 In the beggining the Critic shall learn faster than the Actor to provide appropriate Q values for the Actor.
 
+Main weakness of the DDPG algorithm is that it is fragile in a sense of poor initial convergence. Also it requiers lots of hyperparameters tunning to actually achieve proper convergence.
 
+Eploration in the case of DDPG is provided by Actor's weights perturbation.
 
 ###Model architecture
 
