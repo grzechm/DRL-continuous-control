@@ -1,6 +1,11 @@
 # DRL-continuous-control
 Continous control concept in deep reinforcement learning.
 
+![agent performance visualisation](reacher_random.gif)
+Agent taking random actions
+
+![agent performance visualisation](reacher_actor.gif)
+Trained agent
 
 ### Introduction  
 
@@ -26,6 +31,8 @@ Clone the repository, in conda 'drlnd' environment start jupyter notebook by typ
 Download built environment - https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip
 
 ### Training the agent
-To train the agent use Navigation.ipynb file  
+To train the agent use ContinousControl.ipynb file  
 Type in terminal:  
-	jupyter-notebook ContinousControl.ipnyb  
+	jupyter-notebook ContinousControl.ipnyb
+
+To visualise use ReacherVisualisation.ipnyb
