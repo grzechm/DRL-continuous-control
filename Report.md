@@ -55,7 +55,7 @@ GAMMA = 0.99 - discount factor
 
 ###Plot of rewards 
 
-The environment has been solved (mean score over 100 episodes was higher than 13) in less than 500 episodes.  
+The environment has been solved (mean score over 100 episodes was higher than 30) in around 105 episodes.  
 ![mean score](result_plot.png)  
 
 Actor's weights are stored in 'checkpoint_actor.pth'
