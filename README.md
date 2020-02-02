@@ -2,7 +2,7 @@
 Continous control concept in deep reinforcement learning.
 
 Agent taking random actions
-![agent performance visualisation](reacher_random.gif)
+![agent performance visualisation](reacher_random.gif)  
 
 
 Trained agent
