@@ -1,11 +1,13 @@
 # DRL-continuous-control
 Continous control concept in deep reinforcement learning.
 
-![agent performance visualisation](reacher_random.gif)
 Agent taking random actions
+![agent performance visualisation](reacher_random.gif)
 
-![agent performance visualisation](reacher_actor.gif)
+
 Trained agent
+![agent performance visualisation](reacher_actor.gif)
+
 
 ### Introduction  
 
